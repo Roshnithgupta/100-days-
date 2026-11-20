@@ -1,0 +1,15 @@
+/*
+Q138 (Enum): Print all enum names and integer values using a loop.
+*/
+#include <stdio.h>
+
+enum Color { RED, YELLOW, GREEN };
+
+int main() {
+    const char *names[] = { "RED", "YELLOW", "GREEN" };
+
+    for (enum Color c = RED; c <= GREEN; c++) {
+        printf("%s=%d\n", names[c], c);
+    }
+    return 0;
+}
